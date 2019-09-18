@@ -31,7 +31,7 @@ const messages = {
   }
 }
 export function getLanguage() {
-  const chooseLanguage = Cookies.get('language')
+  const chooseLanguage = Cookies.get('language') || 'zh'
   if (chooseLanguage) return chooseLanguage
 
   // if has not choose language

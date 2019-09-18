@@ -31,7 +31,7 @@ const mutations = {
   },
   SET_LANGUAGE: (state, language) => {
     state.language = language
-    Cookies.set('language', language)
+    Cookies.set('language', language) || 'zh'
   },
   SET_SIZE: (state, size) => {
     state.size = size
